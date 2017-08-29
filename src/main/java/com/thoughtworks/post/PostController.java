@@ -43,7 +43,7 @@ public class PostController {
     }
 
     @GetMapping(path = "/{id}")
-    public ResponseEntity<Resource<Post>> getAllPosts(@PathVariable UUID id) {
+    public ResponseEntity<Resource<Post>> getPostById(@PathVariable UUID id) {
         Post post = posts.get(id);
         Resource<Post> postResource = new Resource(post);
         HttpStatus status = HttpStatus.NOT_FOUND;
