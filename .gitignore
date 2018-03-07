@@ -2,3 +2,5 @@
 /.idea/
 /target/
 /spring-boot-poc.iml
+/.gradle/
+/build/
