@@ -1,15 +1,11 @@
 package com.thoughtworks.post;
 
-import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 import org.hibernate.validator.constraints.NotEmpty;
-import lombok.Getter;
 
-@Getter
-@Setter
 @AllArgsConstructor
 @NoArgsConstructor
+@Data
 public class Post {
     @NotEmpty
     private String title;
