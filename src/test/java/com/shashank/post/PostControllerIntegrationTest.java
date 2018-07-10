@@ -1,4 +1,4 @@
-package com.thoughtworks.post;
+package com.shashank.post;
 
 import org.hamcrest.core.Is;
 import org.junit.Test;
@@ -12,7 +12,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.List;
-import java.util.UUID;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.junit.Assert.assertNotNull;

@@ -1,4 +1,4 @@
-package com.thoughtworks.post;
+package com.shashank.post;
 
 import lombok.Getter;
 import org.springframework.http.ResponseEntity;
