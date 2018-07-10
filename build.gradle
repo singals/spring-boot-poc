@@ -27,7 +27,6 @@ dependencies {
     def spring_boot_version = '1.5.6.RELEASE'
 
     compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: spring_boot_version
-    compile group: 'org.springframework.boot', name: 'spring-boot-starter-hateoas', version: spring_boot_version
     compile group: 'org.projectlombok', name: 'lombok', version: '1.16.16'
 
     testCompile group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: spring_boot_version
