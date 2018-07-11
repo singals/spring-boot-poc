@@ -9,7 +9,7 @@ pipeline {
   stages {
       stage('Build & Test Project') {
         steps {
-          ./gradlew clean build
+          sh gradlew clean build
         }
       }
   }
