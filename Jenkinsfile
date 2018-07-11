@@ -1,5 +1,5 @@
 pipeline {
-  agent { docker { image 'java:8' } }
+  agent { any }
 
   options {
       timestamps()
@@ -10,9 +10,14 @@ pipeline {
       stage('Build & Test Project') {
         steps {
           sh './gradlew clean build'
-
-          junit 'build/test-results/test/*.xml'
         }
       }
   }
+
+  post {
+          always {
+              archiveArtifacts artifacts: 'build/libs/*.jar', fingerprint: true
+              junit 'build/reports/tests/test/index.html'
+          }
+      }
 }
